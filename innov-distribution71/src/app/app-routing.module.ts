@@ -6,8 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component:  HomeComponent},
+  { path: '', component:  HomeComponent},
   { path: 'brands', component:  BrandComponent},
   { path: 'catalogs', component:  CatalogComponent},
 ];
