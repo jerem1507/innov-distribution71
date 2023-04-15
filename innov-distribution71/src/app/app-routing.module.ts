@@ -6,9 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
-  { path: '', component:  HomeComponent},
-  { path: 'brands', component:  BrandComponent},
+  { path: '', component:  CatalogComponent},
   { path: 'catalogs', component:  CatalogComponent},
+  { path: 'home', component:  HomeComponent},
+  { path: 'brands', component:  BrandComponent},
+  { path: '**', component: HomeComponent }  // Wildcard route for a 404 page
 ];
 
 @NgModule({
